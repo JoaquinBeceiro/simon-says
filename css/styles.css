@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  font-family:Montserrat;
+  margin:0px;
+  padding:0px;
+}
+
+.bg-img {
+    background-image: url('../img/games.jpg');
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    left:0;
+    top:0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    padding:-20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    position:absolute;
+    width:100%;
+    top:10%;
+    font-size: 45px;
+}
+
+h1 small {
+    display:block;
+    font-size: 50%;
+    letter-spacing: 15px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom:15px;
+    left:0;
+    font-size: 30px;
+}
+
+footer a, footer a svg{
+    color:#333;
+    fill: #333;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:hover svg {
+    color: #555;
+    fill: #555;
+}
+
+audio {
+  display:none;
+}
+
+#container {
+  width:450px;
+  position:relative;
+  margin:0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.middle {
+  position:absolute;
+  top:200px;
+  left:183px;
+  font-size:40px;
+  color:#FFFFFF;
+  width:80px;
+  text-align:center;
+}
+
+#count {
+    display:none;
+}
+
+#start {
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    top: 185px;
+    cursor: pointer;
+    background-color:#007bff;
+}
+
+#start:hover {
+    background-color: #0069d9;
+}
+
+#simon {
+    position: relative;
+}
+#simon #first{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 224.99999999999997px solid #222222;
+    border-radius: 224.99999999999997px;
+    left: 0px;
+    top: 0px;
+}
+
+.button {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 182.14285714285714px solid;
+}
+
+#simon #a {
+    border-color:#0b7000;
+    border-bottom: none;
+    border-right: none;
+    border-top-left-radius: 182.14285714285714px;
+    left: 32.14285714285714px;
+    top: 32.14285714285714px;
+}
+#simon #b {
+    border-color: #c30800;
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 182.14285714285714px;
+    left: 235.7142857142857px;
+    top: 32.14285714285714px;
+}
+#simon #c {
+    border-color:#c3b400;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 182.14285714285714px;
+    left: 32.14285714285714px;
+    top: 235.7142857142857px;
+}
+#simon #d {
+    border-color:#196d85;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 182.14285714285714px;
+    left: 235.7142857142857px;
+    top: 235.7142857142857px;
+}
+#simon #sixth {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 53.57142857142857px solid #222222;
+    border-radius: 53.57142857142857px;
+    left: 171.42857142857142px;
+    top: 171.42857142857142px;
+}
+
+#error {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    color: white;
+    background-color: rgba(255,0,0,0.5);
+    font-size: 55px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#error button {
+    margin-top:25px;
+}
+
+button {
+    padding:15px 25px;
+    border: none;
+    border-radius: .25rem;
+    color: white;
+    background-color:#007bff;
+    text-transform: uppercase;
+    border-color: #007bff;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
