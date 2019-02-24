@@ -53,6 +53,7 @@ $(document).ready(function() {
             clicksCounter++;
 
             if( sequence.length == clicksCounter ) {
+                disableButtons();
                 await waitFor(1500);
                 addToSequence();
             }
