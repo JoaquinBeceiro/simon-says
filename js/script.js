@@ -83,7 +83,7 @@ $(document).ready(function() {
         
     }
 
-    animateOne = id => {
+    animateOne = (id, last = false) => {
 
 
         const btn = $("#"+id);
@@ -95,7 +95,7 @@ $(document).ready(function() {
         return new Promise( resolve => {
             return setTimeout( () => {
                 btn.css("border-color", buttons[id].color);
-                return setTimeout(resolve,speed )
+                return setTimeout(resolve, last ? 100 : speed )
             }, 200)
         })
 
@@ -108,8 +108,8 @@ $(document).ready(function() {
 
         $("#count").text( sequence.length )
 
-        for (const e of sequence) {
-            await animateOne( e );
+        for (const [index, e] of sequence.entries() ) {
+            await animateOne( e, index == sequence.length-1 );
         }
 
         enableButtons();
